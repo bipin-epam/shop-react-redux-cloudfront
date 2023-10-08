@@ -1,5 +1,11 @@
 # React-shop-cloudfront
 
+##### Task Links
+
+- [S3 Website](http://cloud-course-epam.s3-website.ap-south-1.amazonaws.com/)
+- [CloudFront Link](https://d2y0gfr893n94s.cloudfront.net/)
+- [PR](https://github.com/bipin-epam/shop-react-redux-cloudfront/pull/1)
+
 This is frontend starter project for nodejs-aws mentoring program. It uses the following technologies:
 
 - [Vite](https://vitejs.dev/) as a project bundler
