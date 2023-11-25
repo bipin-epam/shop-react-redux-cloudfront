@@ -10,10 +10,17 @@ import { theme } from "~/theme";
 
 const queryClient = new QueryClient({
   defaultOptions: {
-    queries: { refetchOnWindowFocus: false, retry: false, staleTime: Infinity },
+    queries: {
+      refetchOnWindowFocus: false,
+      retry: false,
+      staleTime: Infinity,
+    },
   },
 });
 
+window.addEventListener("unhandledrejection", (event) => {
+  window.alert(event.reason);
+});
 // if (import.meta.env.DEV) {
 //   const { worker } = await import("./mocks/browser");
 //   worker.start({ onUnhandledRequest: "bypass" });
